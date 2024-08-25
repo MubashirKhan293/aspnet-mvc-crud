@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            color: #404E67;
+            background: #F5F7FA;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .table-wrapper {
+            width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 1px 1px rgba(0,0,0,.05);
+        }
+
+        .table-title {
+            padding-bottom: 10px;
+            margin: 0 0 10px;
+        }
+
+            .table-title h2 {
+                margin: 6px 0 0;
+                font-size: 22px;
+            }
+
+            .table-title .add-new {
+                float: right;
+                height: 30px;
+                font-weight: bold;
+                font-size: 12px;
+                text-shadow: none;
+                min-width: 100px;
+                border-radius: 50px;
+                line-height: 13px;
+            }
+
+                .table-title .add-new i {
+                    margin-right: 4px;
+                }
+
+        table.table {
+            table-layout: fixed;
+        }
+
+            table.table tr th, table.table tr td {
+                border-color: #e9e9e9;
+            }
+
+            table.table th i {
+                font-size: 13px;
+                margin: 0 5px;
+                cursor: pointer;
+            }
+
+            table.table th:last-child {
+                width: 150px;
+            }
+
+            table.table td a {
+                cursor: pointer;
+                display: inline-block;
+                margin: 0 5px;
+                min-width: 24px;
+            }
+
+                table.table td a.add {
+                    color: #27C46B;
+                }
+
+                table.table td a.edit {
+                    color: #FFC107;
+                }
+
+                table.table td a.delete {
+                    color: #E34724;
+                }
+
+            table.table td i {
+                font-size: 19px;
+            }
+
+            table.table td a.add i {
+                font-size: 24px;
+                margin-right: -1px;
+                position: relative;
+                top: 3px;
+            }
+
+            table.table .form-control {
+                height: 32px;
+                line-height: 32px;
+                box-shadow: none;
+                border-radius: 2px;
+            }
+
+                table.table .form-control.error {
+                    border-color: #f50000;
+                }
+
+            table.table td .add {
+                display: none;
+            }
+    </style>
+    <script>
+        $(document).ready(function () {
+            loadProducts();
+
+            function loadProducts() {
+                $.ajax({
+                    url: '/api/Products',
+                    method: 'GET',
+                    success: function (data) {
+                        var rows = '';
+                        data.forEach(function (product) {
+                            rows += '<tr data-id="' + product.id + '">' +
+                                '<td data-name="name">' + product.name + '</td>' +
+                                '<td data-name="description">' + product.description + '</td>' +
+                                '<td data-name="price">' + product.price + '</td>' +
+                                '<td data-name="stockQuantity">' + product.stockQuantity + '</td>' +
+                                '<td>' +
+                                '<a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>' +
+                                '<a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>' +
+                                '<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>' +
+                                '</td>' +
+                                '</tr>';
+                        });
+                        $('table tbody').html(rows);
+                        $('[data-toggle="tooltip"]').tooltip();
+                    }
+                });
+            }
+
+
+            $(".add-new").click(function () {
+                $(this).attr("disabled", "disabled");
+                var index = $("table tbody tr:last-child").index();
+                var row = '<tr>' +
+                    '<td><input type="text" class="form-control" name="name"></td>' +
+                    '<td><input type="text" class="form-control" name="description"></td>' +
+                    '<td><input type="number" step="0.01" class="form-control" name="price"></td>' +
+                    '<td><input type="number" class="form-control" name="stockQuantity"></td>' +
+                    '<td>' +
+                    '<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>' +
+                    '<a class="delete" title="Delete" data-toggle="tooltip" style="display:none;"><i class="material-icons">&#xE872;</i></a>' +
+                    '</td>' +
+                    '</tr>';
+                $("table").append(row);
+                $("table tbody tr").eq(index + 1).find(".add, .edit, .delete").toggle();
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+
+            $(document).on("click", ".add", function () {
+                var empty = false;
+                var row = $(this).closest('tr');
+                var input = row.find('input[type="text"], input[type="number"]');
+                var newProduct = {};
+
+                // input.each(function () {
+                //     if (!$(this).val()) {
+                //         $(this).addClass("error");
+                //         empty = true;
+                //     } else {
+                //         $(this).removeClass("error");
+                //         var key = $(this).attr('name');
+                //         newProduct[key] = $(this).val();
+                //     }
+                // });
+                input.each(function () {
+                    var key = $(this).attr('name'); // This should correctly retrieve the 'name' attribute
+                    var value = $(this).val();
+
+                    // Check if 'key' is correctly retrieved
+                    console.log("Key: " + key + ", Value: " + value);
+
+                    if (key) { // Ensure 'key' is not undefined
+                        newProduct[key] = value;
+                    }
+                });
+
+                console.log(newProduct); // This should now show {price: '99', stockQuantity: '10'}
+
+
+                var price = newProduct.price;
+                var stockQuantity = newProduct.stockQuantity;
+
+                if (price <= 0.0) {
+                    row.find('input[name="price"]').addClass("error");
+                    empty = true;
+                }
+                if (stockQuantity < 0) {
+                    row.find('input[name="stockQuantity"]').addClass("error");
+                    empty = true;
+                }
+
+                if (!empty) {
+                    var id = row.data('id');
+                    console.log(id);
+                    console.log(newProduct);
+                    if (id) {
+                        // Editing existing product
+                        // Editing existing product
+                        $.ajax({
+                            url: '/api/Products/' + id,
+                            method: 'PUT',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                id: id,
+                                name: newProduct.name,
+                                description: newProduct.description,
+                                price: parseFloat(newProduct.price),
+                                stockQuantity: parseInt(newProduct.stockQuantity, 10)
+                            }),
+                            success: function () {
+                                loadProducts(); // Reload products after successful update
+                            },
+                            error: function (xhr, status, error) {
+                                console.error("Update failed: " + error); // Handle errors here
+                            }
+                        });
+                    } else {
+                        // Adding new product
+                        $.ajax({
+                            url: '/api/Products',
+                            method: 'POST',
+                            contentType: 'application/json',
+                            data: JSON.stringify({
+                                name: newProduct.name,
+                                description: newProduct.description,
+                                price: parseFloat(newProduct.price),
+                                stockQuantity: parseInt(newProduct.stockQuantity, 10)
+                            }),
+                            success: function () {
+                                loadProducts();
+                            }
+                        });
+                    }
+                    row.find("td:not(:last-child)").each(function () {
+                        $(this).html($(this).find('input').val());
+                    });
+                    $(this).hide(); // Hide the add button
+                    row.find(".edit, .delete").show(); // Show the edit and delete buttons
+                    $(".add-new").removeAttr("disabled");
+                }
+            });
+
+            $(document).on("click", ".edit", function () {
+                var row = $(this).closest('tr');
+                row.find("td:not(:last-child)").each(function () {
+                    var value = $(this).text();
+                    var name = $(this).data('name'); // Retrieve the name attribute from a data attribute
+                    $(this).html('<input type="text" class="form-control" name="' + name + '" value="' + value + '">');
+                });
+                row.find(".add").show(); // Show the add button
+                row.find(".edit, .delete").hide(); // Hide the edit and delete buttons
+                $(".add-new").attr("disabled", "disabled");
+            });
+
+
+            $(document).on("click", ".delete", function () {
+                var id = $(this).closest('tr').data('id');
+                $.ajax({
+                    url: '/api/Products/' + id,
+                    method: 'DELETE',
+                    success: function () {
+                        loadProducts();
+                    }
+                });
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="container-lg">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-8"><h2>Product <b>Management</b></h2></div>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Stock Quantity</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

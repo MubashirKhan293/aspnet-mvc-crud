@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ccs\\source\\repos\\Products_Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E521675-BE58-4EF1-B45A-7644B874873D}|ProjectsManagement.Tests\\ProjectsManagement.Tests.csproj|c:\\users\\ccs\\source\\repos\\products_management\\projectsmanagement.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E521675-BE58-4EF1-B45A-7644B874873D}|ProjectsManagement.Tests\\ProjectsManagement.Tests.csproj|solutionrelative:projectsmanagement.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|c:\\users\\ccs\\source\\repos\\products_management\\products_management\\controllers\\productsviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|solutionrelative:products_management\\controllers\\productsviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|c:\\users\\ccs\\source\\repos\\products_management\\products_management\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|solutionrelative:products_management\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|c:\\users\\ccs\\source\\repos\\products_management\\products_management\\products_management.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|solutionrelative:products_management\\products_management.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|c:\\users\\ccs\\source\\repos\\products_management\\products_management\\models\\updateproductsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|solutionrelative:products_management\\models\\updateproductsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|c:\\users\\ccs\\source\\repos\\products_management\\products_management\\views\\productsview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|solutionrelative:products_management\\views\\productsview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|c:\\users\\ccs\\source\\repos\\products_management\\products_management\\models\\entity\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|solutionrelative:products_management\\models\\entity\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|c:\\users\\ccs\\source\\repos\\products_management\\products_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|solutionrelative:products_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|c:\\users\\ccs\\source\\repos\\products_management\\products_management\\models\\addproductsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|solutionrelative:products_management\\models\\addproductsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|c:\\users\\ccs\\source\\repos\\products_management\\products_management\\migrations\\20240824112322_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DB7A284-BC0D-48BE-94B9-C36DAA810E29}|Products_Management\\Products_Management.csproj|solutionrelative:products_management\\migrations\\20240824112322_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\ccs\\source\\repos\\Products_Management\\ProjectsManagement.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "ProjectsManagement.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\ccs\\source\\repos\\Products_Management\\ProjectsManagement.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "ProjectsManagement.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAADwvzMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T06:17:58.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsViewController.cs",
+              "DocumentMoniker": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Controllers\\ProductsViewController.cs",
+              "RelativeDocumentMoniker": "Products_Management\\Controllers\\ProductsViewController.cs",
+              "ToolTip": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Controllers\\ProductsViewController.cs",
+              "RelativeToolTip": "Products_Management\\Controllers\\ProductsViewController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T06:12:36.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Program.cs",
+              "RelativeDocumentMoniker": "Products_Management\\Program.cs",
+              "ToolTip": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Program.cs",
+              "RelativeToolTip": "Products_Management\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T20:20:33.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddProductsDto.cs",
+              "DocumentMoniker": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Models\\AddProductsDto.cs",
+              "RelativeDocumentMoniker": "Products_Management\\Models\\AddProductsDto.cs",
+              "ToolTip": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Models\\AddProductsDto.cs",
+              "RelativeToolTip": "Products_Management\\Models\\AddProductsDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwBMAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T05:38:16.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateProductsDto.cs",
+              "DocumentMoniker": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Models\\UpdateProductsDto.cs",
+              "RelativeDocumentMoniker": "Products_Management\\Models\\UpdateProductsDto.cs",
+              "ToolTip": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Models\\UpdateProductsDto.cs",
+              "RelativeToolTip": "Products_Management\\Models\\UpdateProductsDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwBQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T06:06:43.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Products_Management.csproj",
+              "DocumentMoniker": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Products_Management.csproj",
+              "RelativeDocumentMoniker": "Products_Management\\Products_Management.csproj",
+              "ToolTip": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Products_Management.csproj",
+              "RelativeToolTip": "Products_Management\\Products_Management.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-24T05:29:21.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Products_Management\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Products_Management\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAowEAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T20:30:45.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Views\\ProductsView\\Index.cshtml",
+              "RelativeDocumentMoniker": "Products_Management\\Views\\ProductsView\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Views\\ProductsView\\Index.cshtml",
+              "RelativeToolTip": "Products_Management\\Views\\ProductsView\\Index.cshtml",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAAANYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T09:39:57.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Models\\Entity\\Product.cs",
+              "RelativeDocumentMoniker": "Products_Management\\Models\\Entity\\Product.cs",
+              "ToolTip": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Models\\Entity\\Product.cs",
+              "RelativeToolTip": "Products_Management\\Models\\Entity\\Product.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAYwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T19:14:39.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240824112322_initial migration.cs",
+              "DocumentMoniker": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Migrations\\20240824112322_initial migration.cs",
+              "RelativeDocumentMoniker": "Products_Management\\Migrations\\20240824112322_initial migration.cs",
+              "ToolTip": "C:\\Users\\ccs\\source\\repos\\Products_Management\\Products_Management\\Migrations\\20240824112322_initial migration.cs",
+              "RelativeToolTip": "Products_Management\\Migrations\\20240824112322_initial migration.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T11:23:22.494Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
